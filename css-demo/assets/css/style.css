@@ -16,3 +16,12 @@ body{
  background-color:rgb(12, 161, 161);
 
 }
+
+main{}
+
+header.primary{
+  background-color: #3b638b;
+  color: #ffffff;
+  text-align: center;
+  text-shadow:1px 1px #000000
+}
