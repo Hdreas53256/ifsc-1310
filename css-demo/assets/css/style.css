@@ -24,20 +24,26 @@ img{
 .container{
   width: 80vw;
   max-width: 960px;
-  margin: 40px, auto;
+  margin: 40px auto;
 }
+
+
+/* ------------------Global Styes---------------*/
+
 
 body{
  font-family: "Gabarito", "sans-serif";
- margin:0;
+ margin: 0;
 
 }
 
-main{}
+main{
+}
 
 header.primary{
   background-color: #3b638b;
   color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
   text-align: center;
   text-shadow:1px 1px #000000;
   /*long form*/
@@ -141,6 +147,42 @@ header.primary nav ul li a:hover{
 }
 
 
+aside[role="complementary"]{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap: 40px;
+  
+}
+
+aside article.widget a{
+  color: #ffffff;
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+}
+
+
+aside article.widget footer{
+  display: none;
+}
+
+#colophon{
+  background-color: #3b638b;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 1px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 
 /* ------------------Media Queries---------------*/
 @media screen and (max-width: 560px){
@@ -156,4 +198,10 @@ header.primary nav a{
   display:block;
 }
 
+@media screen and (max-width: 420px){
+#blog {
+  flex-direction: column;
+}
+
+}
 }
